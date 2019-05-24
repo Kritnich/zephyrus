@@ -16,7 +16,7 @@ commandCategories = {
     "Games": ["connect4", "jotto", "anagrams", "boggle", "duel", "risk", "epitaph", "pokedex", "planes", "pokemon"],
     "Text": ["mock", "expand", "square", "flagsquare", "clap", "scramble", "smallcaps", "sheriff"],
     "Ciphers": ["rot", "rot13", "vigenere", "devigenere"],
-    "Utilities": ["roll", "convert", "sayno", "choose", "8ball", "color", "timein", "avatar", "wikipedia", "bedtime"],
+    "Utilities": ["roll", "convert", "sayno", "choose", "8ball", "color", "timein", "avatar", "wikipedia", "bedtime", "smug"],
     "Images": ["hueshift", "invert"],
     "Languages": ["pinyin", "jyutping", "translate", "badtranslate", "runes", "foreignwiki", "yale"],
     "Bot": ["ping", "help", "invite", "about"]
@@ -68,6 +68,7 @@ commandFormats = {
     "bedtime": "z!bedtime\nz!bedtime stop",
     "yale": "z!yale <Cantonese text...>",
     "pokemon": "z!pokemon help",
+    "smug": "z!smug",
 
     "help": "z!help [command]"
 }
@@ -173,6 +174,7 @@ descs = {
             "``z!yale 你好`` → ``néihhóu``",
     "pokemon": "Performs a variety of Pok\u00e9mon-related functions. I'm continually adding to this, so just use "
                "``z!pokemon help`` for more details.",
+    "smug": "Posts a smug anime girl from Sankakucomplex for you.",
 
     "help": "Shows the usage + format of a command. If no command is provided, lists all available commands."
 }

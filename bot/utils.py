@@ -1,5 +1,5 @@
 from game import *
-from utilities import dice as di, weed as wd, timein as ti, translate as tr, wiki as wk
+from utilities import dice as di, weed as wd, timein as ti, translate as tr, wiki as wk, smug
 import re
 import requests
 from io import BytesIO
@@ -739,6 +739,14 @@ async def phone_command(ctx: commands.Context, func: str = "help", channel: str=
             return await Call.call(ctx.channel, channel).run()
         except AssertionError:
             raise commands.CommandError(f"No server with the number ``{channel}``.")"""
+
+
+@zeph.command(name="smug")
+async def smug(ctx: commands.Context):
+    try:
+        return await ctx.send(smug.get())
+    except:
+        return await ctx.send("Something went wrong and ur mom gay")
 
 
 @zeph.command(hidden=True)
